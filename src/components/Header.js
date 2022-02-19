@@ -23,7 +23,7 @@ function Header() {
   return (
     <Container isScroll={y}>
       <a href="/">
-        <img src="./Tesla-Webpage/images/logo.svg" alt="TESLA Logo" />
+        <img src="./images/logo.svg" alt="TESLA Logo" />
       </a>
       <Menu>
         {cars &&

@@ -18,7 +18,7 @@ function Section({ title, description, bgImage, leftBtnText, rightBtnText }) {
             {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
           </ButtonGroup>
         </Fade>
-        <DownArrow src="./Tesla-Webpage/images/down-arrow.svg" />
+        <DownArrow src="./images/down-arrow.svg" />
       </Buttons>
     </Wrap>
   );
@@ -27,8 +27,7 @@ function Section({ title, description, bgImage, leftBtnText, rightBtnText }) {
 const Wrap = styled.div`
   width: 100vw;
   height: 100vh;
-  background-image: ${(props) =>
-    `url("./Tesla-Webpage/images/${props.BgImg}")`};
+  background-image: ${(props) => `url("./images/${props.BgImg}")`};
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
