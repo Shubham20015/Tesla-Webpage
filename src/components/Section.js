@@ -18,7 +18,7 @@ function Section({ title, description, bgImage, leftBtnText, rightBtnText }) {
             {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
           </ButtonGroup>
         </Fade>
-        <DownArrow src="/images/down-arrow.svg" />
+        <DownArrow src="./Tesla-Webpage/images/down-arrow.svg" />
       </Buttons>
     </Wrap>
   );
@@ -27,7 +27,8 @@ function Section({ title, description, bgImage, leftBtnText, rightBtnText }) {
 const Wrap = styled.div`
   width: 100vw;
   height: 100vh;
-  background-image: ${(props) => `url("/images/${props.BgImg}")`};
+  background-image: ${(props) =>
+    `url("./Tesla-Webpage/images/${props.BgImg}")`};
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -55,7 +56,6 @@ const ButtonGroup = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
   }
-  /* justify-content: center; */
 `;
 const LeftButton = styled.div`
   background-color: rgba(23, 26, 32, 0.8);
@@ -78,7 +78,6 @@ const RightButton = styled(LeftButton)`
   opacity: 0.65;
   color: black;
 `;
-// const ButtonGroup = styled.div``;
 
 const DownArrow = styled.img`
   margin-top: 10px;
